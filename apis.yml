@@ -1,0 +1,60 @@
+aid: datos-comunidad-madrid
+name: Madrid Region Open Data
+description: >-
+  Madrid Region Open Data is a regional government open-data portal for Spain running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 2,282 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/datos-comunidad-madrid/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Regional Government
+  - Spain
+created: '2026-06-07'
+modified: '2026-06-07'
+specificationVersion: '0.19'
+apis:
+  - aid: datos-comunidad-madrid:catalog
+    name: Madrid Region Open Data CKAN Action API
+    description: >-
+      CKAN Action API for Madrid Region Open Data, a consistent JSON-over-HTTP interface over a catalog of 2,282 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://datos.comunidad.madrid/api/3/action/.
+    humanURL: https://datos.comunidad.madrid
+    baseURL: https://datos.comunidad.madrid/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://datos.comunidad.madrid
+      - type: x-api-endpoint
+        url: https://datos.comunidad.madrid/api/3/action/status_show
+      - type: x-ckan-version
+        value: '2.9.0'
+common:
+  - type: Website
+    url: https://datos.comunidad.madrid
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/datos-comunidad-madrid-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/datos-comunidad-madrid-rate-limits.yml
+  - type: FinOps
+    url: finops/datos-comunidad-madrid-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

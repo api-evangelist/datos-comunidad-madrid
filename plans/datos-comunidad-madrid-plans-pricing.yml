@@ -1,0 +1,35 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: Madrid Region Open Data
+providerId: datos-comunidad-madrid
+created: '2026-06-07'
+modified: '2026-06-07'
+reconciled: false
+tags:
+- Open Data
+- CKAN
+- Plans
+description: >-
+  Madrid Region Open Data is a public open-data portal. Its catalog API is offered free of charge.
+notes: Free / open public data API. No commercial pricing.
+sources:
+- https://raw.githubusercontent.com/api-evangelist/datos-comunidad-madrid/refs/heads/main/apis.yml
+plans:
+- id: datos-comunidad-madrid-open
+  name: Free / Open Data
+  type: free
+  description: Public open-data catalog API offered at no charge.
+  entries:
+  - label: Open API Access
+    name: open_api_access
+    type: free
+    metric: requests
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: '0.00'
+    userMultiplied: false
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
